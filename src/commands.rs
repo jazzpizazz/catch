@@ -28,7 +28,7 @@ fn default_commands() -> Vec<Command> {
         .collect()
 }
 
-pub const COMMANDS_PATH: &str = "/opt/catch/commands.json";
+pub const COMMANDS_PATH: &str = "/opt/catch/shortcuts.json";
 
 pub fn ensure_directory_exists(path_str: &str) -> io::Result<()> {
     let path = Path::new(path_str);

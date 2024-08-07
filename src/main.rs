@@ -31,10 +31,10 @@ fn main() {
     ensure_directory_exists("/opt/catch/").unwrap();
 
     if !Path::new(COMMANDS_PATH).exists() {
-        write_initial_commands(COMMANDS_PATH).expect("[-] Failed to create initial commands.json");
+        write_initial_commands(COMMANDS_PATH).expect("[-] Failed to create initial shortcuts.json");
     }
 
-    let commands = read_commands(COMMANDS_PATH).expect("[-] Could not read commands.json");
+    let commands = read_commands(COMMANDS_PATH).expect("[-] Could not read shortcuts.json");
 
     let listener = TcpListener::bind(&address);
 

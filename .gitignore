@@ -1,4 +1,5 @@
 debug/
 target/
 **/*.rs.bk
+shortcuts.json
 commands.json
