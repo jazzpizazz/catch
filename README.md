@@ -15,7 +15,7 @@ cargo build -r
 Wihtout any arguments `catch` will start listening on `0.0.0.0:8443`, you can however specify the IP and port you want to listen on:
 ```bash
 $ target/release/catch -h
-Rust-based reverse shell listener offering enhanced operational features.
+Rust-based linux reverse shell listener.
 
 Usage: catch [OPTIONS]
 
