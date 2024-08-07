@@ -45,9 +45,9 @@ $ target/release/catch
 ## Shortcuts
 When in a shell you can press the magic **ctrl+y** key combination to open up a special menu:
 ![shortcuts](https://github.com/user-attachments/assets/f3be2960-fee4-4f6c-a961-6b521c6cba99)
-In here you can search for a "shortcut" either by arrow keys or by typing (notice the search query in the bottom left) after you hit **enter** to directly send it to the shell!
+In here you can search for a "shortcut" either by arrow keys or by typing (notice the search query in the bottom left) after which you hit **enter** to directly send it to the shell!
 ### Adding your own shortcuts
-Currently the commands are stored in `/opt/catch/commands.json` and you can add your own commands to the JSON file which is being loaded on startup. I'm considering moving this list to its own repository so additional commands can be added through PR's. 
+Currently the commands are stored in `/opt/catch/commands.json` and you can add your own commands to the JSON file which is being loaded on startup. I'm considering moving this list to its own repository so additional commands can be added through PR's. But I also get how people would like to manage their own shortcuts.
 
 ## Exiting
 To exit a connected reverse shell hit **ctr+_** this will attempt to revert your terminal to its default settings.
