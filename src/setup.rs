@@ -1,6 +1,6 @@
 use std::net::TcpStream;
 
-use crate::core::connection::{recv_until_marker, send_command, send_raw};
+use crate::connection::{recv_until_marker, send_command, send_raw};
 
 pub fn disable_history(stream: &mut TcpStream) {
     println!("[i] Unsetting histfile...");

@@ -1,7 +1,7 @@
-use crate::core::commands::{get_command, get_command_names, Command};
-use crate::core::markers::{END_MARKER, START_MARKER};
-use crate::core::setup::{disable_history, tty_upgrade};
-use crate::core::terminal::{reset_terminal, set_raw_mode, show_shortcut_menu};
+use crate::commands::{get_command, get_command_names, Command};
+use crate::markers::{END_MARKER, START_MARKER};
+use crate::setup::{disable_history, tty_upgrade};
+use crate::terminal::{reset_terminal, set_raw_mode, show_shortcut_menu};
 use std::io::{self, Read, Write};
 use std::net::TcpStream;
 use std::sync::mpsc::{self, TryRecvError};

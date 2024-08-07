@@ -1,10 +1,14 @@
-mod core;
+mod commands;
+mod connection;
+mod markers;
+mod setup;
+mod terminal;
 
 use clap::Parser;
-use core::commands::{
+use commands::{
     ensure_directory_exists, read_commands, write_initial_commands, COMMANDS_PATH,
 };
-use core::connection::handle_connection;
+use connection::handle_connection;
 use std::net::TcpListener;
 use std::path::Path;
 use std::process;
